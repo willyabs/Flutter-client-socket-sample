@@ -111,6 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
       connector.disconnect();
       connector = null;
       connected = false;
+      setState(() {});
     }
   }
 }

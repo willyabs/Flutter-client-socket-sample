@@ -58,6 +58,7 @@ class Connector {
   void sendMessage(final List<int> bytes) {
     if (bytes != null && bytes.length > 0) {
       if (_socket != null) {
+        print("send bytes len: ${bytes.length}");
         _socket.add(bytes);
       }
     }
